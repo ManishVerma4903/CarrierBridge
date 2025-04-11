@@ -28,7 +28,7 @@ const PORT = process.env.PORT || 3000;
 
 // api's
 
-app.get("/check",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send({
         activeStatus : true,
         error:false
@@ -43,5 +43,5 @@ app.use("/api/v1/application", applicationRoute);
 
 app.listen(PORT,()=>{
     connectDB();
-    console.log(`Server running at port ${PORT}`);
+    
 })
