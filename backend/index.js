@@ -28,7 +28,7 @@ const PORT = process.env.PORT || 3000;
 
 // api's
 
-app.get("/",(req,res)=>{
+app.get("/check",(req,res)=>{
     res.send({
         activeStatus : true,
         error:false
